@@ -1,19 +1,19 @@
-# # context manager
 
-# class FileManager():
-#     def __init__(self,file_name,mode):
-#         self.file_name=file_name
-#         self.mode=mode
-#         self.file=None
+class FileManager():
+	def __init__(self, filename, mode):
+		self.filename = filename
+		self.mode = mode
+		self.file = None
+		
+	def __enter__(self):
+		self.file = open(self.filename, self.mode)
+		return self.file
+	
+	def __exit__(self, exc_type, exc_value, exc_traceback):
+		self.file.close()
 
-# def __enter__(self):
-#     self.file=open(self.file_name,self.mode)
-#     return self.file
-   
+# loading a file 
+with FileManager('test1.txt', 'w') as f:
+	f.write('Hello!!!!')
 
-# def __exit__(self, exc_type, exc_value, exc_traceback):
-#         self.file.close()
-
-# with FileManager('test1.txt', 'w') as f:
-#     f.write('helloooolllllllllllll')
- 
+print(f.closed)
