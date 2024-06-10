@@ -62,6 +62,9 @@ if __name__ =="__main__":
 	t2.join()
 
 	print("Done!")
+	
+print(dir())
+
 
 # Meta class
 # A metaclass is a class that allows for 
@@ -88,4 +91,3 @@ print(f"subclass_object's class is {subclass_object.__class__}/n")
 print(f"SubClass's class is {subclass_object.__class__.__class__}/n")
 print(f"ExampleMetaClass's class is {subclass_object.__class__.__class__.__class__}")
 
-print(dir())
