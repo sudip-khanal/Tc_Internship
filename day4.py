@@ -1,22 +1,22 @@
-#magic methods
-# print(dir())
-# print(dir(int))
+# magic methods
+print(dir())
+print(dir(int))
 
-# num=10
-# res = num.__add__(5) 
-# print(res)
+num=10
+res = num.__add__(5) 
+print(res)
 
 
-# class Employee:
-#   def __new__(cls):
-#     print ("__new__ magic method is called")
-#     inst = object.__new__(cls)
-#     return inst
-#   def __init__(self):
-#     print ("__init__ magic method is called")
+class Employee:
+  def __new__(cls):
+    print ("__new__ magic method is called")
+    inst = object.__new__(cls)
+    return inst
+  def __init__(self):
+    print ("__init__ magic method is called")
     
     
-# emp = Employee()
+emp = Employee()
 
 
 
@@ -24,15 +24,15 @@
 # Write a Python program that creates a generator function
 # that yields cubes of numbers from 1 to n. Accept n from the user.
 
-# def cube_genrator(n):
-#     for i in range(1,n+1):
-#         yield i**3
+def cube_genrator(n):
+    for i in range(1,n+1):
+        yield i**3
     
-# n = int(input("Enter the number: "))
+n = int(input("Enter the number: "))
 
-# cube=cube_genrator(n)
-# for i in cube:
-#     print(i)
+cube=cube_genrator(n)
+for i in cube:
+    print(i)
 
 
 
@@ -41,15 +41,15 @@
 # Write a Python program to implement a generator 
 # that generates random numbers within a given range.
 
-# import random
+import random
 
-# def random_generator(start, end):
-#     while True:
-#         yield random.randint(start, end)
+def random_generator(start, end):
+    while True:
+        yield random.randint(start, end)
 
-# random_numbers = random_generator(10, 15)
-# for i in range(10):
-#     print(next(random_numbers))
+random_numbers = random_generator(10, 15)
+for i in range(10):
+    print(next(random_numbers))
 
  
 
@@ -57,16 +57,32 @@
 # and keyword arguments, prints the sum of all positional arguments, and
 # then prints all the keyword arguments.
 
-# def process_data(*args ,**kwargs):
-#     cal_sum = sum(args)
-#     print("Sum of positional arguments:", cal_sum)
+def process_data(*args ,**kwargs):
+    cal_sum = sum(args)
+    print("Sum of positional arguments:", cal_sum)
 
-#     for a, b in kwargs.items():
-#          print(f"{a}: {b}")
+    for a, b in kwargs.items():
+         print(f"{a}: {b}")
 
-# process_data(1,2,3,a=2,b=3,c=5,d=7)
+process_data(1,2,3,a=2,b=3,c=5,d=7)
 
 
+
+    # slicing
+
+
+a=['apple','ball','cat','dog', 'elephant','flag']
+print(a[0])
+print(a[-1])
+print(a[2:5])
+print(a[:3])
+print(a[3:])
+print(a[-5:-2])
+print(a[2:len(a)])
+print(a==a[:])
+print(a[:])
+print(a[1:6:2])
+print(a[::-1])
 
 # Write a function calculate that takes any number of positional and 
 # keyword arguments. If a keyword argument operation is provided, it 
@@ -112,24 +128,7 @@ print(calculate (2,20,op ='sub'))
 
     
 
-    # slicing
 
 
-# a=['apple','ball','cat','dog', 'elephant','flag']
-# print(a[0])
-# print(a[-1])
-# print(a[2:5])
-# print(a[:3])
-# print(a[3:])
-# print(a[-5:-2])
-# print(a[2:len(a)])
-# print(a==a[:])
-# print(a[:])
-# print(a[1:6:2])
-# print(a[::-1])
 
-
-# creating metaclasse
-
-# class Hello(type):
     
