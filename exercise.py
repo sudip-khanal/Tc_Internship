@@ -210,7 +210,7 @@ def add(a,b):
     return sum
 
 # Call the decorated function
-result = add(100,900)
+result = add(500,900)
 print("Result:", result)
 
 
