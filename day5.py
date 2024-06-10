@@ -62,3 +62,30 @@ if __name__ =="__main__":
 	t2.join()
 
 	print("Done!")
+
+# Meta class
+# A metaclass is a class that allows for 
+# other classes to be instantiated as objects of the metaclass.
+
+# Metaclasses allow for code not only to manipulate data, but to manipulate classes.
+# Often this change happens when an object of the class is instantiated. 
+# Using metaclasses also helps to abstract our code, making it more readable 
+# and helping to reduce the amount of code written by avoiding repetition in code.
+
+class ExampleMetaClass(type):
+	# def __init__(self,name,gender ):
+	# 	self.name=name
+	# 	self.gender=gender
+	pass
+
+class SubClass(metaclass=ExampleMetaClass):
+    pass
+ 
+
+subclass_object = SubClass()
+
+print(f"subclass_object's class is {subclass_object.__class__}/n")
+print(f"SubClass's class is {subclass_object.__class__.__class__}/n")
+print(f"ExampleMetaClass's class is {subclass_object.__class__.__class__.__class__}")
+
+print(dir())
