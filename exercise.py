@@ -139,8 +139,11 @@ print(a[-1])
 print(a[2:5])
 print(a[:3])
 print(a[3:])
-print(a[-5:-2])
+print(a[-5:-2])# pr request test1 
+# pr request test2
+
 print(a[2:len(a)])
+
 print(a==a[:])
 print(a[:])
 print(a[1:6:2])
