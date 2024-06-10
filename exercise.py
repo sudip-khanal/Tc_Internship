@@ -132,6 +132,19 @@ print(Counter.count)
 
 Counter.increment()
 print(Counter.count)
+#slicing
+a=['apple','ball','cat','dog', 'elephant','flag']
+print(a[0])
+print(a[-1])
+print(a[2:5])
+print(a[:3])
+print(a[3:])
+print(a[-5:-2])
+print(a[2:len(a)])
+print(a==a[:])
+print(a[:])
+print(a[1:6:2])
+print(a[::-1])
 
 # Create a class Date with attributes day, month, and year. Add a class 
 # method today that returns a new instance of Date with the current date.
