@@ -139,12 +139,39 @@ print(a[-1])
 print(a[2:5])
 print(a[:3])
 print(a[3:])
-print(a[-5:-2])
+print(a[-5:-2])# pr request test1 
+# pr request test2
+
 print(a[2:len(a)])
+# pr request test3
 print(a==a[:])
 print(a[:])
 print(a[1:6:2])
 print(a[::-1])
+# pr request test4
+
+# threading
+import threading
+
+def print_cube(num):
+	print("Cube: {}" .format(num * num * num))
+
+
+def print_square(num):
+	print("Square: {}" .format(num * num))
+
+
+if __name__ =="__main__":
+	t1 = threading.Thread(target=print_square, args=(10,))
+	t2 = threading.Thread(target=print_cube, args=(10,))
+
+	t1.start()
+	t2.start()
+
+	t1.join()
+	t2.join()
+
+	print("Done!")
 
 # Create a class Date with attributes day, month, and year. Add a class 
 # method today that returns a new instance of Date with the current date.
