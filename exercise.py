@@ -143,11 +143,12 @@ print(a[-5:-2])# pr request test1
 # pr request test2
 
 print(a[2:len(a)])
-
+# pr request test3
 print(a==a[:])
 print(a[:])
 print(a[1:6:2])
 print(a[::-1])
+# pr request test4
 
 # threading
 import threading
