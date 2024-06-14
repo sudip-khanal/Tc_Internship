@@ -116,15 +116,14 @@ else:
   print("finished!")
 
 # if else statement
-# print('if else statement')
-# a = int(input("Enter first number"))
-# b = int(input("Enter second number"))
-# if b > a:
-#   print("second number is greater than first number")
-# elif a == b:
-#   print("first number and second number are equal")
-# else:
-#   print("first number is greater than second number")
+a = int(input("Enter first number"))
+b = int(input("Enter second number"))
+if b > a:
+  print("second number is greater than first number")
+elif a == b:
+  print("first number and second number are equal")
+else:
+  print("first number is greater than second number")
 
 # function
 print('function')
