@@ -1,17 +1,17 @@
 ## Contents
 
-1. [Printing to Console](#printing-to-console)
-2. [Comments](#comments)
-3. [Variables](#variables)
-   - [Multiple Assignments](#multiple-assignments)
-   - [Global and Local Variables](#global-and-local-variables)
-4. [Data Types](#data-types)
-5. [Type Conversion](#type-conversion)
-6. [Lists](#lists)
-   - [List Methods](#list-methods)
-   - [Looping Through Lists](#looping-through-lists)
-   - [List Comprehension](#list-comprehension)
-7. [Tuples](#tuples)
+1. [Printing to Console](https://www.w3schools.com/python/python_syntax.asp)
+3. [Comments](https://www.w3schools.com/python/python_comments.asp)
+4. [Variables](https://www.w3schools.com/python/python_variables.asp)
+   - [Multiple Assignments](https://www.w3schools.com/python/python_variables_multiple.asp)
+   - [Global and Local Variables](https://www.geeksforgeeks.org/global-local-variables-python/)
+5. [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
+6. [Type Conversion](https://www.w3schools.com/python/python_casting.asp)
+7. [Lists](https://www.w3schools.com/python/python_lists.asp)
+   - [List Methods](https://www.w3schools.com/python/python_lists.asp)
+   - [Looping Through Lists](https://www.w3schools.com/python/python_lists_loop.asp)
+   - [List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp).
+8. [Tuples](https://www.w3schools.com/python/python_tuples.asp)
 
 ## Printing to Console
 
